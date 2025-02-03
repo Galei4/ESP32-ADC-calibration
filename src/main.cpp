@@ -1,15 +1,14 @@
 #include "LinarADC.h"
 #include <Arduino.h>
 
-LinarADC abc(34, 19, 18, ".json");
-// LinarADC abc;
+// LinarADC abc(34, ".bin", 14, 26);
+LinarADC abc;
 
 void setup(){
 
-    Serial.begin(250000);
+    Serial.begin(115200);
     delay(1000);
-    dac_output_enable(DAC_CHANNEL_1); 
-    dac_output_voltage(DAC_CHANNEL_1, 0); 
+
     abc.debugfcn = [](const char *txt) {
         Serial.printf(txt);
     };
@@ -33,6 +32,7 @@ void setup(){
     } else {
         Serial.println("ADC error"); 
     }
+    dac_output_enable(DAC_CHANNEL_1); 
 
 };
 
@@ -53,4 +53,5 @@ void loop(){
     }
     while(1);
 }
+
 
