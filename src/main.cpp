@@ -9,24 +9,21 @@ void setup(){
     Serial.begin(115200);
     delay(1000);
 
+    //to print messages 
     abc.debugfcn = [](const char *txt) {
         Serial.printf(txt);
     };
 
     // Do calbration.Save file
-    bool saved = abc.save();
-
-    if (saved) {
+    if (abc.save()) {
         Serial.println("File saved");
 
     } else {
        Serial.println("Error. File wasn't saved"); 
     }
 
-    //  Load File. begin ADC
-    bool adcSuccess = abc.begin();
-    
-    if (adcSuccess) {
+    //  Load File. begin ADC    
+    if (abc.begin()) {
         Serial.println("ADC OK");
 
     } else {

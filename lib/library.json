@@ -1,0 +1,31 @@
+{
+    "name": "LinarADC",
+    "version": "1.0.0",
+    "description": "ADC reading, calibration, and SPIFFS-based storage library for ESP32.",
+    "keywords": [
+      "ESP32",
+      "ADC",
+      "analog",
+      "voltage",
+      "calibration",
+      "SPIFFS"
+    ],
+    "authors": [
+      {
+        "name": "Linar Galeev",
+        "email": "galeev.linar93@gmail.com",
+        "url": "https://github.com/galei4/LinarADC"
+      }
+    ],
+    "frameworks": ["arduino"],
+    "platforms": ["espressif32"],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/galei4/LinarADC.git"
+    },
+    "dependencies": [
+      {
+        "name": "ArduinoJson"
+      }
+    ]
+  }
