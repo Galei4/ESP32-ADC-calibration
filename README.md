@@ -119,22 +119,11 @@ The library provides LED indications for different states:
 - **SPIFFS.h**: SPI Flash File System library.
 - **ArduinoJson.h**: JSON library for handling JSON files.
 
-## License
-
-This library is open-source and available under the MIT License. Feel free to modify and distribute it as needed.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
-
 ## Author
 
-[Your Name]
+Linar Galeev
+galeev.linar93@gmail.com
 
-## Acknowledgments
-
-- Thanks to the ESP32 community for their support and resources.
-- Special thanks to the developers of the ArduinoJson library for making JSON handling easy.
 
 ---
 
